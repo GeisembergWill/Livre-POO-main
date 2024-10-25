@@ -4,17 +4,19 @@ Class Livre{
         private  $_nbreDePages;
         private  $_anneeDeParution;
         private int$_prix;
+        private Auteur $_auteur;
 
-       
+              
 
 
-        public function __construct($titre,$nbreDePages,$anneeDeParution,$prix){
+        public function __construct ($titre,$nbreDePages,$anneeDeParution,$prix,$auteur){
         $this->_titre = $titre;
         $this->_nbreDePages = $nbreDePages;
         $this->_anneeDeParution = $anneeDeParution;
         $this->_prix = $prix;
+        $this->_auteur = $auteur;
 }
-
+       
         public function getTitre(){
         return $this->_titre;
 }
@@ -42,10 +44,11 @@ Class Livre{
         public function setPrix($prix){
         $this->_prix=$Prix;
 }
-        
+
+
         public function __toString(){
         return "$this->_titre($this->_anneeDeParution) : $this->_nbreDePages pages /$this->_prix € <br>";
             
 }
-}
-        
+
+}        
