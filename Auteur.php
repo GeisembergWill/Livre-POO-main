@@ -5,8 +5,8 @@ Class Auteur{
 
 
     public function __construct($nom,$prenom){
-        $this->_Nom =$nom;
-        $this->_Prenom =$prenom;
+        $this->_nom = $nom;
+        $this->_prenom = $prenom;
     }
     public function _getNom(){
         return $this->_nom;
@@ -22,7 +22,7 @@ Class Auteur{
         $this->_prenom=$prenom;
     }
     public function __toString(){
-        return $this->_prenom. " " . $this->_nom;  
+        return "Livres de $this->_nom $this->_prenom";  
     }
 }
 
