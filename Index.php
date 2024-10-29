@@ -28,16 +28,16 @@ array_push($livres, "autre livre");
 // Ajoute "autre livre" à la fin du tableau $livres
 
 // Afficher des informations sur l'auteur et son âge
-echo "L'auteur est $auteur, âgé de " . $auteur->getAge() . " actuellement.<br>"; 
+echo "L'auteur est $auteur, âgé de " . $auteur->getAge() . " actuellement.<br><br>"; 
 // Affiche une chaîne contenant le nom de l'auteur et son âge, en utilisant la méthode getAge()
 
 // Afficher les informations de chaque livre
-echo $livre;  
-echo $livre2; 
-echo $livre3; 
+echo $livre . "<br>";  
+echo $livre2 . "<br>"; 
+echo $livre3 . "<br>"; 
 echo $livre4 . "<br>"; 
 
 // Afficher les détails de l'auteur et du livre en utilisant var_dump
-var_dump($auteur); 
+var_dump($auteur)."<br>"; 
 
-var_dump($livre); 
+var_dump($livre)."<br>"; 
